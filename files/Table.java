@@ -23,5 +23,4 @@ public class Table {
 	public List<String> getValues() {
 		return values;
 	}
-	
 }
