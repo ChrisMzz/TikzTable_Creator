@@ -10,8 +10,8 @@ def find_substring(text, query, start=0):
 
 with open(f'sections.csv', 'r') as fp:
     reader = csv.reader(fp)
-    section=""
+    section = ""
     for row in reader:
-        section+=row[0] + ", "
-    section=section[0:len(section)-2]
+        section += row[0] + ", "
+    section = section[0:len(section)-2]
     print(f'List<String> sections = List.of("{section}");')
