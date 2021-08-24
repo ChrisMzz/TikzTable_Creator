@@ -8,7 +8,6 @@ public class TikzText {
 	private double customSpace;
 	
 	
-	
 	public TikzText(double scale) {
 		this.scale = "[scale=" + scale + "]";
 	}
@@ -34,7 +33,6 @@ public class TikzText {
 		Collections.sort(functionsKeyList);
 		
 		
-		
 		String tempText = "";
 		
 		tempText += "\\begin{tikzpicture}" + scale + "\n";
@@ -58,15 +56,12 @@ public class TikzText {
 		for (String element : table.getValues()) {
 			tempText += (element.substring(0,3).equals("LIN")) ? "\\tkzTabLine{" + element.substring(4,element.length()) + "}\n" : "\\tkzTabVar{" + element.substring(4,element.length()) + "}\n";
 		}	
-			
+		
 		
 		tempText += "\\end{tikzpicture}\n";	
 		System.out.println(tempText);
 		return tempText;
+		
 	}
-	
-	
-
-	
 	
 }
