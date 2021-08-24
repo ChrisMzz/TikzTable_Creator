@@ -18,7 +18,6 @@ def newify(text, query):
 
 x=0
 
-
 with open('values/length.txt', 'r') as fp:
     length_value = int(fp.read())
 
