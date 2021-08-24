@@ -84,6 +84,5 @@ with open('url.txt', 'r') as fp:
         line = fp.readline()
         cnt+=1
 
-
 for i in range(0, len(finalroots)):
     print(root_dictionary[finalroots[i]])
