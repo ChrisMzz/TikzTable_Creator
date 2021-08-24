@@ -1,7 +1,6 @@
 print("import java.util.ArrayList;\nimport java.util.HashMap;\nimport java.util.List;\n")
 print()
 print()
-print()
 print("public class Main {")
 print("\tpublic static void main(String[] args) {")
 print()	
