@@ -5,11 +5,12 @@ with open('rescaling_info.csv', 'r') as fp:
     reader = csv.reader(fp)
     for row in reader:
         if str(row[0]) == ".":
-            y=""
+            y = ""
             if x == 1:
-                y=1
+                y = 1
+                #Necessary to avoid an error with the setCustomSpace() function, as it requires an argument, unlike the other functions below.
         else:
-            y=str(row[0])
+            y = str(row[0])
         if x == 0:
             print(f"TikzText image = new TikzText({y});")
         if x == 1:
