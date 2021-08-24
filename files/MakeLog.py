@@ -30,7 +30,7 @@ if os.path.isfile('roots.txt'):
                 cnt += 1
         print(roots)
         print()
-print("---------------------------------")
+print("----------------------------------")
 print()
 print("Functions java code :")
 with open('functions.txt', 'r') as fp:
